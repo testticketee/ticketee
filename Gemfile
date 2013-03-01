@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.11'
 
@@ -36,3 +36,12 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :test, :development do
+  gem 'rspec-rails', '~> 2.5'
+end
+group :test do
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+end
